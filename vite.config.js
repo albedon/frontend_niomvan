@@ -16,16 +16,14 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
       },
-    },
-    // Add this section to handle client-side routing
-    spaFallback: {
-      index: '/index.html',
-    },
+    }
   },
   optimizeDeps: {
     include: ["react", "react-dom", "react-router-dom", "@vitejs/plugin-react"],
   },
   server: {
+    // Add this section to handle client-side routing
+    historyApiFallback: true,
     // ...existing code...
   },
   resolve: {
