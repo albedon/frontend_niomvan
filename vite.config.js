@@ -6,8 +6,18 @@ export default defineConfig({
   root: ".", 
   build: {
     outDir: "dist",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // ...existing code...
+        }
+      }
+    }
   },
   optimizeDeps: {
     include: ["react", "react-dom", "react-router-dom", "@vitejs/plugin-react"],
   },
+  server: {
+    // ...existing code...
+  }
 });
