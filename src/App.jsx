@@ -39,13 +39,13 @@ function App() {
 							</ProtectedRoute>
 						}
 					/>
-					<Route path="/login" element={<Login />} />
-					<Route path="/logout" element={<Logout />} />
-					<Route path="/register" element={<RegisterAndLogout />} />
-					<Route path="about" element={<About />} />
-					<Route path="symptoms" element={<ProtectedRoute><Symptoms /></ProtectedRoute>} />
-					<Route path="osteoarthritis" element={<ProtectedRoute><Osteoarthritis /></ProtectedRoute>} />
-					<Route path="summary" element={<ProtectedRoute><Summary /></ProtectedRoute>} />
+					<Route path="frontend/login" element={<Login />} />
+					<Route path="frontend/logout" element={<Logout />} />
+					<Route path="frontend/register" element={<RegisterAndLogout />} />
+					<Route path="frontend/about" element={<About />} />
+					<Route path="frontend/symptoms" element={<ProtectedRoute><Symptoms /></ProtectedRoute>} />
+					<Route path="frontend/osteoarthritis" element={<ProtectedRoute><Osteoarthritis /></ProtectedRoute>} />
+					<Route path="frontend/summary" element={<ProtectedRoute><Summary /></ProtectedRoute>} />
 					<Route path="*" element={<NotFound />} />
 				</Route> 
 			</Routes>
